@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="problem3.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="head"> ID Card Generator</h1>
+
+  <div class="maincontainer">
+    <center>
+      <div class="detail" style="flex-grow: 100">
+        <form>
+          <h2 class="h2">Enter Student Details</h2>
+          <br>
+          <label>Full Name:</label>
+          <input type="text" id="inname" class="inputBox placeholder=" Full Name">
+
+          <label>Enter College Name:</label>
+          <input type="text" id="incollege" class="inputBox placeholder=" College Name">
+
+          <label>Enter Branch:</label>
+          <input type="text" id="inbranch" class="inputBox placeholder=" Branch">
+
+          <label>Enter Roll No:</label>
+          <input type="text" id="inroll" class="inputBox placeholder=" Roll No">
+
+          <label for="file" class="upload">Enter Student's Picture:</label> <br>
+          <input type="file" id="file" class="filee" accept="image/*" onchange="loadImage(event)">
+        </form>
+
+        <button onclick="generateCard()" value="click" id="generete-card">Generete Card</button>
+
+      </div>
+    </center>
+
+    <div class="mainn" style="flex-grow: 100">
+      <h2 class="idcard">Genereted Id Card</h2>
+      <br>
+      <table>
+        <td class="td">
+          <img class="img1" src="" id="imgDisplayed">
+        </td>
+        <td class="td2" rowspan="8">
+          <li>
+            <span class="span1">Name:</span>
+            <span id="name" class="value"> </span>
+          </li>
+          <br>
+          <li>
+            <span class="span1">College:</span>
+            <span id="college" class="value"></span>
+          </li>
+          <br>
+          <li>
+            <span class="span1">Branch:</span>
+            <span id="branch" class="value"> </span>
+          </li>
+          <br>
+          <li>
+            <span class="span1">Roll No:</span>
+            <span id="roll" class="value"> </span>
+          </li>
+        </td>
+      </table>
+
+    </div>
+  </div>
+
+</body>
+
+<script src="problem3.js"></script>
+
+</html>

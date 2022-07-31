@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 20px Helvetica, Arial;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.maincontainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.mainn{
+  border-left: 1px solid #c01f2d;
+  padding-left: 6%;
+  height: 70vh;
+}
+
+/* for header  */
+.head {
+  background-color: #c01f2d;
+  color: white;
+  text-align: center;
+  align-items: baseline;
+  height: 55px;
+  padding: 5px;
+}
+
+.h2 {
+  color: #c01f2d;
+}
+
+.detail {
+  margin-left: 10%;
+  width: 50vw;
+
+}
+
+form {
+  width: 50%;
+  float: center;
+  text-align: start;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  display: table;
+  margin-bottom: 1em;
+  width: 100%;
+  height: 25px;
+  font-size: 16px;
+  border: 2px solid#000;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #efeffc;
+}
+
+.inputBox{
+  border: none;
+  box-shadow: 1px 1px 5px #c01f2c8c;
+}
+
+.filee {
+  background: white;
+  border: none;
+  height: 30px;
+}
+
+#generete-card {
+  margin-bottom: 1em;
+  width: 35%;
+  height: 40px;
+  font-size: 16px;
+  border: 2px solid#000;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #c01f2d;
+  color: white;
+}
+
+.img1 {
+  height: 100px;
+  width: 90px;
+  padding-left: 12%;
+}
+
+
+table {
+  border: 2px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 0 25px grey;
+}
+
+.idcard{
+  color: #c01f2d;
+  padding-top: 15%;
+}
+
+.td {
+  background-color: #c01f2cc9;
+  height: 135px;
+  width: 120px;
+  border-radius: 5px;
+}
+
+.td2 {
+  height: 160px;
+  width: 220px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.span1 {
+  font-weight: lighter;
+}
+
+.td2 li {
+  list-style-type: none;
+}

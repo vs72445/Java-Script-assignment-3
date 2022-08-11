@@ -1,8 +1,10 @@
 // changing these words morning, afternoon, evening and night according to time...
 let time = new Date();
+
+// getting time from the date object...
 let hours = time.getHours();
 let greet;
-
+// conditions to change the greet...
 if (hours >= 4 && hours < 12) {
     greet = 'morning';
 }
@@ -16,14 +18,15 @@ else {
     greet = 'night'
 }
 
+// getting the value of greet... 
 document.getElementById("greet").innerHTML = greet;
-
 
 // getting random quotes and background colors...
 let btn = document.getElementById("next_btn");
 let quote = document.getElementById("quote_line");
 let bgColor = document.getElementById("container");
 
+// array of quotes...
 let quotes = [
     '"When you have a dream, you have got to grab it and never let go." — Carol Burnett',
 
@@ -46,17 +49,30 @@ let quotes = [
     '"Do not allow people to dim your shine because they are blinded. Tell them to put some sunglasses on." — Lady Gaga'
 ]
 
+// array of color grades...
 let colors = ["#9e0909","#9e0959","#8f6207","#6f078f","#386b07","#1b076b","#076b42","#07136b","#292a36","#910707"]
 
+// btn.addEventListener('click', () => {
+//     let randomQuote = Math.floor(Math.random() * quotes.length);
+//     let outputQuote = quotes[randomQuote];
+//     quote.innerHTML = outputQuote;
+// })
+
+// or
 
 // by using onclick="output()" as attribute calling the function in button
+
 function output() {
     let random = Math.floor(Math.random() * quotes.length);
 
+    // getting random values from the arrays...
     let outputQuote = quotes[random];
+    let outputColor = colors[random];
+
+    // printing the random quotes...
     quote.innerHTML = outputQuote;
 
-    let outputColor = colors[random];
+    // changing the the colors of quote, btn and bgcolor randomly...
     quote.style.color = outputColor;
     btn.style.backgroundColor = outputColor;
     bgColor.style.backgroundColor = outputColor;

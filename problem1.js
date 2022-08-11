@@ -1,17 +1,18 @@
 function updateTime() {
-    // get current date and time by making a date object
+    // getting current date and time by making a date object
     let currentUpdate = new Date();
-    // 
+    
     let hour = currentUpdate.getHours();
     let minute = currentUpdate.getMinutes();
     let second = currentUpdate.getSeconds();
 
-    var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"],
-        day = currentUpdate.getDate();
+    var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"]
 
+    let day = currentUpdate.getDate();
     let month = currentUpdate.getMonth();
     let year = currentUpdate.getFullYear();
-
+    
+    // adding the conditions
     if (hour < 10) {
         hour = '0' + hour;
     }
@@ -50,5 +51,3 @@ document.querySelector("#start_btn").addEventListener("click", () => {
 document.querySelector("#stop_btn").addEventListener("click", () => {
     clearInterval(stop);
 });
-
-
